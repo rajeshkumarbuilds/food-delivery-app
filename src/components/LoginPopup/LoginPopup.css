@@ -1,0 +1,230 @@
+/* ====== Container ====== */
+.login-popup {
+  position: fixed;
+  top: 10%;
+  left: 38%;
+  width: 400px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 99;
+  /* position: relative; */
+}
+
+/* ====== Form ====== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ====== Title ====== */
+.login-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.login-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.login-title img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-title img:hover {
+  transform: rotate(90deg);
+}
+
+/* ====== Inputs ====== */
+.login-inputs input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-inputs input:focus {
+  border-color: #007bff;
+}
+
+/* ====== Submit Button ====== */
+.login-form button[type="submit"] {
+  padding: 12px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.login-form button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* ====== Terms & Condition ====== */
+.login-condition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.login-condition .checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+/* ====== Switch Login/Signup ====== */
+.login-form p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+}
+
+.login-form p span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-form p span:hover {
+  text-decoration: underline;
+}
+
+/* ====== Social Login Buttons ====== */
+.login-popup > div button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.login-popup > div button:hover {
+  opacity: 0.9;
+}
+
+/* Google Button */
+.login-popup > div button:nth-child(2) {
+  background: #db4437;
+  color: #fff;
+}
+
+/* User Info Section */
+.login-popup > div h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.login-popup > div img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Logout Button */
+.login-popup > div button {
+  background: #ff4d4d;
+  color: #fff;
+}
+.social-login {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-login button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.social-login button:hover {
+  opacity: 0.9;
+}
+
+/* Google */
+.google-btn {
+  background: #db4437;
+}
+
+/* Facebook */
+.facebook-btn {
+  background: #3b5998;
+}
+
+/* Phone */
+.phone-btn {
+  background: #28a745;
+}
+
+/* Logout */
+.logout-btn {
+  background: #ff4d4d;
+}
+
+/* Phone input field */
+.social-login input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+/* OTP Inputs */
+.social-login input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.social-login button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.google-btn { background: #db4437; }
+.facebook-btn { background: #3b5998; }
+.phone-btn { background: #28a745; }
+.logout-btn { background: #ff4d4d; }
+
+

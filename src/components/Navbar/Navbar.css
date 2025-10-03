@@ -1,0 +1,140 @@
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    /* color: #49557e; */
+    font-size: 18px;
+
+}
+.theme,.basket{
+    font-size:20px;
+    cursor: pointer;
+}
+
+.navbar-menu li {
+    cursor: pointer;
+}
+
+.navbar-menu a{
+     color: var(--text-color);
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .sign-in {
+    /* margin-top: 20px; */
+    /* width: 100%; */
+    padding: 8px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background: #333;
+}
+
+.active {
+    padding-bottom: 1px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-right img {
+    width: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:1050px) {
+
+    .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width:950px) {
+
+    .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:750px) {
+
+    .navbar-menu {
+        display: none;
+    }
+
+}
